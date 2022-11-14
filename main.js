@@ -14,195 +14,400 @@ const likeDislike = 0;
 
 
 
-let users = [{
-    "id": 1,
-    "login": "ivan",
-    "pass": "123",
-    "fullName": "ivanov ivan ivanovich",
-    "balance": 0,
-    "role": 1,
-    "tempRole": 1,
-    "shopId": 0,
-    "loan": 0
-},
-{
-    "id": 2,
-    "login": "petr",
-    "pass": "123",
-    "fullName": "petr petr petr",
-    "balance": 0,
-    "role": 2,
-    "tempRole": 2,
-    "shopId": 6,
-    "loan": 0
-},
-{
-    "id": 3,
-    "login": "nik",
-    "pass": "123",
-    "fullName": "nik nik nik",
-    "balance": 0,
-    "role": 3,
-    "tempRole": 3,
-    "shopId": 0,
-    "loan": 0
-},
-{
-    "id": 4,
-    "login": "andre",
-    "pass": "123",
-    "fullName": "andre andre andre",
-    "balance": 0,
-    "role": 4,
-    "tempRole": 4,
-    "shopId": 0,
-    "loan": 0
-},
-{
-    "id": 5,
-    "login": "yey",
-    "pass": "123",
-    "fullName": "yey yey yey",
-    "balance": 0,
-    "role": 5,
-    "tempRole": 5,
-    "shopId": 0,
-    "loan": 0
-},
-{
-    "id": 6,
-    "login": "shop1",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 1,
-    "loan": 0,
-    "city": "Dmitrov",
-    "comments": [],
-    "sellers": []
-},
-{
-    "id": 7,
-    "login": "shop2",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 2,
-    "loan": 0,
-    "city": "Kaluga",
-    "comments": [],
-    "sellers": []
-},
-{
-    "id": 8,
-    "login": "shop3",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 3,
-    "loan": 0,
-    "city": "Moscow",
-    "comments": [],
-    "sellers": []
-},
-{
-    "id": 9,
-    "login": "shop4",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 4,
-    "loan": 0,
-    "city": "Ryazan",
-    "comments": [],
-    "sellers": []
-},
-{
-    "id": 10,
-    "login": "shop5",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 5,
-    "loan": 0,
-    "city": "Samara",
-    "comments": [],
-    "sellers": []
-},
-{
-    "id": 11,
-    "login": "shop6",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 6,
-    "loan": 0,
-    "city": "Saint-Petersburg",
-    "comments": [],
-    "sellers": []
-},
-{
-    "id": 12,
-    "login": "shop7",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 7,
-    "loan": 0,
-    "city": "Taganrog",
-    "comments": [],
-    "sellers": []
-},
-{
-    "id": 13,
-    "login": "shop8",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 8,
-    "loan": 0,
-    "city": "Tomsk",
-    "comments": [],
-    "sellers": []
-},
-{
-    "id": 14,
-    "login": "shop9",
-    "pass": "123",
-    "fullName": "123",
-    "balance": 0,
-    "role": 6,
-    "tempRole": 6,
-    "shopId": 9,
-    "loan": 0,
-    "city": "Habarovsk",
-    "comments": [],
-    "sellers": []
-}
+let users = [
+    //покупатели
+    {
+        "id": 1,
+        "login": "roman",
+        "pass": "123",
+        "fullName": "Романов Роман Романович",
+        "balance": 80,
+        "role": 1,
+        "tempRole": 1,
+        "shopId": 0,
+        "loan": 0
+    },
+    {
+        "id": 1,
+        "login": "nikola",
+        "pass": "123",
+        "fullName": "Николаев Николай Николаевич",
+        "balance": 90,
+        "role": 1,
+        "tempRole": 1,
+        "shopId": 0,
+        "loan": 0
+    },
+    {
+        "id": 1,
+        "login": "oleg",
+        "pass": "123",
+        "fullName": "Олегов Олег Олегович",
+        "balance": 100,
+        "role": 1,
+        "tempRole": 1,
+        "shopId": 0,
+        "loan": 0
+    },
+    {
+        "id": 1,
+        "login": "petr",
+        "pass": "123",
+        "fullName": "Петров Петр Петрович",
+        "balance": 110,
+        "role": 1,
+        "tempRole": 1,
+        "shopId": 0,
+        "loan": 0
+    },
+    {
+        "id": 1,
+        "login": "alex",
+        "pass": "123",
+        "fullName": "Александрова Александра Александровна",
+        "balance": 120,
+        "role": 1,
+        "tempRole": 1,
+        "shopId": 0,
+        "loan": 0
+    },
+    //продавцы
+    {
+        "id": 2,
+        "login": "semen",
+        "pass": "123",
+        "fullName": "Семенов Семен Семенович",
+        "balance": 70,
+        "role": 2,
+        "tempRole": 2,
+        "shopId": 1,
+        "loan": 0
+    },
+    {
+        "id": 2,
+        "login": "uing",
+        "pass": "123",
+        "fullName": "Евгеньева Евгения Евгеньевна",
+        "balance": 80,
+        "role": 2,
+        "tempRole": 2,
+        "shopId": 3,
+        "loan": 0
+    },
+    {
+        "id": 2,
+        "login": "dima",
+        "pass": "123",
+        "fullName": "Дмитриев Дмитрий Дмитриевич",
+        "balance": 90,
+        "role": 2,
+        "tempRole": 2,
+        "shopId": 5,
+        "loan": 0
+    },
+    {
+        "id": 2,
+        "login": "vasya",
+        "pass": "123",
+        "fullName": "Васильев Василий Васильевич",
+        "balance": 100,
+        "role": 2,
+        "tempRole": 2,
+        "shopId": 7,
+        "loan": 0
+    },
+    {
+        "id": 2,
+        "login": "igor",
+        "pass": "123",
+        "fullName": "Игорев Игорь Игоревич",
+        "balance": 150,
+        "role": 2,
+        "tempRole": 2,
+        "shopId": 8,
+        "loan": 0
+    },
+    //поставщик
+    {
+        "id": 3,
+        "login": "goldfish",
+        "pass": "123",
+        "fullName": "Золотая рыбка",
+        "balance": 100,
+        "role": 3,
+        "tempRole": 3,
+        "shopId": 0,
+        "loan": 0,
+        "products": []
+    },
+    //банк
+    {
+        "id": 4,
+        "login": "bank",
+        "pass": "123",
+        "fullName": "Тинькофф банк",
+        "balance": 10000,
+        "role": 4,
+        "tempRole": 4,
+        "shopId": 0,
+        "loan": 0
+    },
+    //админ
+    {
+        "id": 5,
+        "login": "ivan",
+        "pass": "123",
+        "fullName": "Иванов Иван Иванович",
+        "balance": 0,
+        "role": 5,
+        "tempRole": 5,
+        "shopId": 0,
+        "loan": 0
+    },
+    //магазины
+    {
+        "id": 6,
+        "login": "shop1",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 1,
+        "loan": 0,
+        "city": "Dmitrov",
+        "comments": [
+            {
+                "idComm": 1,
+                "login": "oleg",
+                "grade": 10,
+                "comment": "Отличное качество товара!",
+                "like": 25,
+                "dislike": 0,
+                "answers": [
+                    {
+                        "idReply": 1,
+                        "reply": "подтверждаю",
+                        "login": "petr",
+                        "grade": 9,
+                        "like": 20,
+                        "dislike": 2
+                    },
+                ]
+            },
+            {
+                "idComm": 2,
+                "login": "petr",
+                "grade": 9,
+                "comment": "Быстрое обслуживание!",
+                "like": 15,
+                "dislike": 1,
+                "answers": [
+                    {
+                        "idReply": 1,
+                        "reply": "А я долго ждал((",
+                        "login": "nikola",
+                        "grade": 2,
+                        "like": 0,
+                        "dislike": 11
+                    },
+                    {
+                        "idReply": 2,
+                        "reply": "Магазин приносит свои извинения за длительное ожидание",
+                        "login": "semen",
+                        "like": 40,
+                        "dislike": 15
+                    },
+                ]
+            },
+        ],
+        "sellers": []
+    },
+    {
+        "id": 7,
+        "login": "shop2",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 2,
+        "loan": 0,
+        "city": "Kaluga",
+        "comments": [
+        ],
+        "sellers": []
+    },
+    {
+        "id": 8,
+        "login": "shop3",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 3,
+        "loan": 0,
+        "city": "Moscow",
+        "comments": [
+            {
+                "idComm": 1,
+                "login": "roman",
+                "grade": 5,
+                "comment": "Ничего особенного",
+                "like": 3,
+                "dislike": 20,
+                "answers": [
+                    {
+                        "idReply": 1,
+                        "reply": "Не согласен с вами, всё супер!",
+                        "login": "petr",
+                        "grade": 10,
+                        "like": 15,
+                        "dislike": 0
+                    },
+                ]
+            },
+            {
+                "idComm": 2,
+                "login": "alex",
+                "grade": 8,
+                "comment": "Спасибо, мне всё понравилось!",
+                "like": 23,
+                "dislike": 1,
+                "answers": [
+                    {
+                        "idReply": 1,
+                        "reply": "И мне!",
+                        "login": "roman",
+                        "grade": 9,
+                        "like": 36,
+                        "dislike": 5
+                    },
+                ]
+            },
+        ],
+        "sellers": []
+    },
+    {
+        "id": 9,
+        "login": "shop4",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 4,
+        "loan": 0,
+        "city": "Ryazan",
+        "comments": [],
+        "sellers": []
+    },
+    {
+        "id": 10,
+        "login": "shop5",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 5,
+        "loan": 0,
+        "city": "Samara",
+        "comments": [],
+        "sellers": []
+    },
+    {
+        "id": 11,
+        "login": "shop6",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 6,
+        "loan": 0,
+        "city": "Saint-Petersburg",
+        "comments": [],
+        "sellers": []
+    },
+    {
+        "id": 12,
+        "login": "shop7",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 7,
+        "loan": 0,
+        "city": "Taganrog",
+        "comments": [],
+        "sellers": []
+    },
+    {
+        "id": 13,
+        "login": "shop8",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 8,
+        "loan": 0,
+        "city": "Tomsk",
+        "comments": [
+            {
+                "idComm": 1,
+                "login": "alex",
+                "grade": 1,
+                "comment": "Мне нахамил продавец. Больше не приду к вам!",
+                "like": 10,
+                "dislike": 2,
+                "answers": [
+                    {
+                        "idReply": 1,
+                        "reply": "Поддерживаю, ужасный сервис!",
+                        "login": "petr",
+                        "grade": 2,
+                        "like": 11,
+                        "dislike": 0
+                    },
+                ]
+            },
+            {
+                "idComm": 2,
+                "login": "oleg",
+                "grade": 3,
+                "comment": "Сервис в магазине на троечку.",
+                "like": 15,
+                "dislike": 2,
+                "answers": []
+            },
+        ],
+        "sellers": []
+    },
+    {
+        "id": 14,
+        "login": "shop9",
+        "pass": "123",
+        "fullName": "123",
+        "balance": 0,
+        "role": 6,
+        "tempRole": 6,
+        "shopId": 9,
+        "loan": 0,
+        "city": "Habarovsk",
+        "comments": [],
+        "sellers": []
+    }
 ]
 let reqRiseList = [];
 let reqLoan = [];
 let reqDowngrade = [];
 let admins = [
     {
-        "id": 5,
-        "login": "yey"
+
     }
 ]
 
@@ -312,9 +517,9 @@ app.post("/getLoan", (req, res) => {
     if (useri) {
         useri.balance += 1000;
         useri.loan += 1000;
-        return res.status(200).json({ message: "Get loan!"})
+        return res.status(200).json({ message: `You get loan. You owe the bank ${useri.loan}. Your balance ${useri.balance}` })
     }
-    return res.status(500).json({error: "Error!"})
+    return res.status(500).json({ error: "Error!" })
 })
 
 app.delete("/getLoan", (req, res) => {
@@ -323,9 +528,9 @@ app.delete("/getLoan", (req, res) => {
     const useri = users.find(el => el.login === request.login && el.id === request.id)
     if (useri) {
         users.splice(ind, 1);
-        return res.status(200).json({message: "Delete!"})
+        return res.status(200).json({ message: "Delete!" })
     }
-    return res.status(200).json({ message: `You get loan. You owe the bank ${useri.loan}. Your balance ${useri.balance}` })
+    return res.status(200).json({ message: "Error!" })
 
 })
 
@@ -383,21 +588,42 @@ app.put("/becomeASeller", (req, res) => {
 })
 
 app.post("/replyComm", (req, res) => {
-    const { loginSeller, loginShop, idComm, reply } = req.body;
+    const { login, loginShop, idComm, reply, grade } = req.body;
     const shopi = users.find(el => el.login === loginShop)
-    const selleri = users.find(el => el.login === loginSeller)
+    const selleri = users.find(el => el.login === login)
     const commenti = shopi.comments.find(el => el.idComm == idComm)
-    if (shopi || selleri.role == 6 || commenti) {
-        commenti.answers.push({ loginSeller, reply })
+    console.log(commenti);
+    const like = likeDislike;
+    const dislike = likeDislike;
+    const idReply = commenti.answers.length + 1;
+    if (shopi || commenti) {
+        commenti.answers.push({ idReply, reply, login, grade, like, dislike })
         return res.status(200).json({ message: "Reply!" })
     }
-    else if (selleri.role != 6) {
-        return res.status(500).json({ error: "You`r not a seller" })
-    }
     return res.status(500).json({ error: "not found shop || not found comment || UNDEFINED LOGIN" })
+})
 
-
-
+app.post("/likeReply", (req, res) => {
+    const { loginShop, idComm, idReply } = req.body;
+    const shopi = users.find(el => el.login === loginShop)
+    const commenti = shopi.comments.find(el => el.idComm == idComm)
+    const repli = commenti.answers.find(el => el.idReply === idReply)
+    if (shopi && commenti) {
+        repli.like += 1;
+        return res.status(200).json({ message: "Like!" })
+    }
+    return res.status(500).json({ error: "Error!" })
+})
+app.post("/dislikeReply", (req, res) => {
+    const { loginShop, idComm, idReply } = req.body;
+    const shopi = users.find(el => el.login === loginShop)
+    const commenti = shopi.comments.find(el => el.idComm == idComm)
+    const repli = commenti.answers.find(el => el.idReply === idReply)
+    if (shopi && commenti) {
+        repli.dislike += 1;
+        return res.status(200).json({ message: "Dislike!" })
+    }
+    return res.status(500).json({ error: "Error!" })
 })
 
 // admin
@@ -490,6 +716,20 @@ app.delete("/delShop", (req, res) => {
         return res.status(200).json({ message: "Delete!" })
     }
     return res.status(500).json({ message: "Error!" })
+})
+
+//provider
+
+app.post("/addProduct", (req, res) => {
+    const {userLogin, pass, title, producer, dateOfProd, expDate, storTemp, unit, basePrice} =  req.body;
+    const provi = users.find(el => el.login === userLogin && el.pass === pass);
+    console.log(provi)
+    if (provi.pole == 3){
+        provi.products.push({title, producer, dateOfProd, expDate, storTemp, unit, basePrice});
+        console.log(provi)
+        return res.status(200).json({message: "Product add!"})
+    }
+    return res.status(500).json({error: "Error!"})
 })
 
 //примеры отдельно
