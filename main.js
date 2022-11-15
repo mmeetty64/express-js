@@ -724,13 +724,18 @@ app.post("/addProduct", (req, res) => {
     const {userLogin, pass, title, producer, dateOfProd, expDate, storTemp, unit, basePrice} =  req.body;
     const provi = users.find(el => el.login === userLogin && el.pass === pass);
     console.log(provi)
-    if (provi.pole == 3){
+    if (provi.role == 3){
         provi.products.push({title, producer, dateOfProd, expDate, storTemp, unit, basePrice});
         console.log(provi)
         return res.status(200).json({message: "Product add!"})
     }
     return res.status(500).json({error: "Error!"})
 })
+
+// app.post("/rate", (req, res) => {
+//     const {loginShop, isShop} = req.body;
+//     const shopi = users.find(el => el.)
+// })
 
 //примеры отдельно
 
